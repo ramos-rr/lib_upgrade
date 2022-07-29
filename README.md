@@ -1,4 +1,4 @@
-# lib_upgrade (Library Upgrader)
+# lib-upgrade (pip install lib-upgrade)
 Package to help developers check and upgrade their libraries as they wish.<br>
 <br>
 PYTHON VERSION SUPPORTED >= 3.10
@@ -7,7 +7,7 @@ PYTHON VERSION SUPPORTED >= 3.10
 When executed, the system will check up for all your already used libraries and requirements, and then it 
 will provide a list, giving the opportunity for the users to choose which one they want to be upgraded to the
 latest version.<br><br>
-► libraries it uses: OS, SUBPROCESSES, TIME.SLEEP<br><br>
+Libraries it uses: OS, SUBPROCESSES, TIME.SLEEP<br><br>
 The system works at that sequence:<br>
 1. Through a command line inside the terminal (hidden from user view), it asks PIP the list of libraries that are being 
 used that are out of date, transforming it in a temporary .TXT file;
@@ -22,25 +22,30 @@ the interaction;
 When there is no more libraries out of date according to the information returned from PIP
 
 # "PIP LIST -O" COMMAND
-lib_upgade uses " _pip list -o_ " command to recieve the list of all out of date libraries that are bieng used in the 
+lib_upgade uses " _pip list -o_ " command to recieve the list of all out of date libraries that are being used in the 
 project 
 
 # INSTALLING AND EXECUTING:
-1. In the terminal, type the command → " pip install lib_upgrade "<br>
+1. In the terminal, type the command → " pip install lib-upgrade "<br>
 <br>
 2. After successfully installed, you can run it from inside a _Script_ or from the _Terminal / Python Console_:<br>
 <br>
 2.1. RUNNING FROM INSIDE AN SCRIPT<br>
-► If you are using an IDE e.g. PyCharm, you shall import the library as followed:<br>
-→ from lib_upgrade.lib_upgrade import upgrade_lib<br>
-→ upgrade_lib()<br>
+- If you are using an IDE e.g. PyCharm, you shall import the library as followed:<br>
+ " " "<br>
+ from lib_upgrade.lib_upgrade import upgrade_lib<br>
+ upgrade_lib()<br>
+ " " "
+<br>
 <br>
 2.2. RUNNING FROM TERMINAL / CONSOLE<br>
-► If you are using any terminal, make sure you are inside the correct VENV within you project, then import and execute 
-as followed:<br>
-► (.venv) python<br>
->>> from lib_upgrade.lib_upgrade import upgrade_lib
->>> upgrade_lib()
+- If you are using any terminal, make sure you are inside the correct VENV within you project, then import and execute 
+as followed:<br><br>
+" " "<br>
+ (.venv) python<br>
+ from lib_upgrade.lib_upgrade import upgrade_lib<br>
+ upgrade_lib()<br>
+" " "
 <br><br>
 3. After initialized, interact with the program to choose which one of the out of date libraries you want PIP to
 upgrade
